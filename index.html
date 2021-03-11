@@ -28,13 +28,489 @@
     <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+    <!-- SIDE NAV -->
+    <nav class="sideNav">
+        <div class="cont-sidenav">
+            <ul>
+                <li id="logo" class="active">
+                    <a href="index.html">
+                        <svg id="logo" width="68" height="50" viewBox="0 0 68 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+                            <path d="M14.9154 19.3427H12.1606V25.4821H8.69739V8.69733H14.9351C16.9225 8.69733 18.4573 9.13023 19.5199 10.0157C20.5825 10.9012 21.1334 12.1409 21.1334 13.7544C21.1334 14.8957 20.8776 15.8599 20.3857 16.6273C19.8938 17.3947 19.146 18.0047 18.1228 18.4573L21.7631 25.3246V25.4821H18.0638L14.9154 19.3427ZM12.1606 16.5486H14.9548C15.8206 16.5486 16.4896 16.3321 16.9815 15.8795C17.4735 15.427 17.6899 14.8366 17.6899 14.0496C17.6899 13.2625 17.4735 12.6328 17.0209 12.1802C16.5683 11.7276 15.8599 11.5112 14.9351 11.5112H12.1606V16.5486Z" fill="white"/>
+                            <path d="M23.0225 19.146C23.0225 17.9064 23.2586 16.8044 23.7308 15.8402C24.2031 14.8761 24.8918 14.1283 25.797 13.597C26.7021 13.0657 27.7253 12.8099 28.906 12.8099C30.5982 12.8099 31.956 13.3215 33.0185 14.3644C34.0811 15.4073 34.6714 16.7847 34.8092 18.5557L34.8288 19.4018C34.8288 21.3105 34.2975 22.8454 33.235 24.0063C32.1724 25.1673 30.736 25.7379 28.9256 25.7379C27.1153 25.7379 25.6986 25.1673 24.6163 24.0063C23.5341 22.8454 23.0225 21.2712 23.0225 19.2838V19.146ZM26.3676 19.3822C26.3676 20.5628 26.5841 21.4679 27.0366 22.0976C27.4892 22.7273 28.1189 23.0421 28.9453 23.0421C29.7521 23.0421 30.3818 22.7273 30.8343 22.1173C31.2869 21.5073 31.5231 20.5038 31.5231 19.146C31.5231 17.9851 31.2869 17.0799 30.8343 16.4502C30.3818 15.8206 29.7521 15.486 28.9256 15.486C28.1189 15.486 27.4892 15.8009 27.0366 16.4306C26.5841 17.0602 26.3676 18.0441 26.3676 19.3822Z" fill="white"/>
+                            <path d="M48.1504 19.3624C48.1504 21.3695 47.7175 22.924 46.8713 24.0456C46.0252 25.1672 44.8249 25.7182 43.2901 25.7182C41.9323 25.7182 40.8501 25.2066 40.0433 24.1637L39.8859 25.4821H36.895V7.77252H40.2204V14.1283C40.9878 13.2231 41.9914 12.7706 43.2507 12.7706C44.7659 12.7706 45.9662 13.3215 46.832 14.4431C47.6978 15.5647 48.1307 17.1389 48.1307 19.1657V19.3624H48.1504ZM44.8052 19.1263C44.8052 17.867 44.6085 16.9421 44.2149 16.3715C43.8214 15.8009 43.2114 15.5057 42.4243 15.5057C41.3617 15.5057 40.6336 15.9386 40.2401 16.8044V21.7237C40.6533 22.6092 41.3814 23.0421 42.4636 23.0421C43.5459 23.0421 44.2543 22.5108 44.5888 21.4482C44.7265 20.9366 44.8052 20.1692 44.8052 19.1263Z" fill="white"/>
+                            <path d="M29.693 41.4798C27.863 41.4798 26.3676 40.9091 25.2263 39.7875C24.085 38.6659 23.4947 37.1704 23.4947 35.3011V34.9863C23.4947 33.7269 23.7308 32.6053 24.2228 31.6214C24.7147 30.6376 25.3837 29.8702 26.2889 29.3389C27.194 28.8076 28.1976 28.5321 29.3192 28.5321C31.0311 28.5321 32.3692 29.0634 33.353 30.1456C34.3369 31.2279 34.8288 32.743 34.8288 34.7305V36.0882H26.8792C26.9776 36.895 27.3121 37.564 27.863 38.0559C28.414 38.5478 29.083 38.8036 29.9292 38.8036C31.2082 38.8036 32.2117 38.3314 32.9398 37.4066L34.573 39.2366C34.0811 39.9449 33.3924 40.4959 32.5462 40.8894C31.7001 41.283 30.7359 41.4798 29.693 41.4798ZM29.3192 31.2279C28.6501 31.2279 28.1189 31.4443 27.7056 31.8969C27.2924 32.3495 27.0366 32.9792 26.9185 33.8253H31.5624V33.5498C31.5427 32.8021 31.3459 32.2314 30.9721 31.8379C30.5982 31.4443 30.0276 31.2279 29.3192 31.2279Z" fill="white"/>
+                            <path d="M40.2401 41.2436H36.895V19.1263H40.2401V41.2436Z" fill="white"/>
+                            <path d="M48.17 38.784C48.78 38.784 49.2916 38.6069 49.6655 38.2724C50.0393 37.9379 50.2558 37.4853 50.2558 36.9146H53.3845C53.3845 37.7608 53.1484 38.5282 52.6958 39.2366C52.2432 39.9449 51.6135 40.4762 50.8264 40.8698C50.0393 41.2633 49.1735 41.4601 48.2094 41.4601C46.4187 41.4601 45.0216 40.8894 43.9984 39.7678C42.9752 38.6462 42.4439 37.072 42.4439 35.065V34.8485C42.4439 32.9201 42.9555 31.3853 43.9787 30.244C45.002 29.1027 46.399 28.5321 48.1897 28.5321C49.7442 28.5321 51.0035 28.9847 51.948 29.8702C52.8926 30.7556 53.3648 31.9363 53.3845 33.4121H50.2558C50.2361 32.7627 50.0393 32.2314 49.6655 31.8379C49.2916 31.4443 48.78 31.2279 48.1503 31.2279C47.3829 31.2279 46.7926 31.5034 46.399 32.074C46.0055 32.6447 45.8087 33.5498 45.8087 34.8288V35.183C45.8087 36.4621 46.0055 37.3869 46.399 37.9575C46.7729 38.5085 47.3632 38.784 48.17 38.784Z" fill="white"/>
+                            <path d="M58.7958 41.2436H55.4506V28.7682H58.7958V41.2436Z" fill="white"/>
+                            <path d="M7.22157 0H2.79418H0V2.79418V7.22157H2.79418V2.79418H7.22157V0Z" fill="white"/>
+                            <path d="M67.4144 7.22157V2.79418V0H64.6202H60.2125V2.79418H64.6202V7.22157H67.4144Z" fill="white"/>
+                            <path d="M60.2125 49.882H64.6202H67.4144V47.0878V42.6604H64.6202V47.0878H60.2125V49.882Z" fill="white"/>
+                            <path d="M0 42.7784V47.2058V50H2.79418H7.22157V47.2058H2.79418V42.7784H0Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="sobre-mi.html">
+                        <i class="fas fa-smile-wink"></i>
+                        <p class="text-xs">Sobre mí</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="habilidades.html">
+                        <i class="fas fa-paint-brush"></i>
+                        <p class="text-xs">Habilidades</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="portafolio.html">
+                        <i class="fas fa-briefcase"></i>
+                        <p class="text-xs">Portafolio</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="contactame">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <p class="text-xs">Contáctame</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://www.linkedin.com/in/robelci-mg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/robelci_manuel/" target="_blank" class="mx-1"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=525538650995" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- END SIDE NAV -->
+    
+    <main class="main-content">
+        <!-- BANNER -->
+        <section class="section-banner">
+            <div class="content-circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="info-banner">
+                            <h1 class="title">
+                                <p>HOLA,</p>
+                                <p>SOY ROBELCI.</p>
+                                <p>DISEÑADOR</p>
+                                <p>UI / UX / MAQUETADOR</p>   
+                            </h1>
+                            <div class="btn-banner-cont">
+                                <a href="cv/Robelci CV-Book.pdf" class="hvr-bounce-to-right">Descarga mi CV</a>
+                                <a href="portafolio.html" class="hvr-bounce-to-right btn-black">Contáctame</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6">
+                        <svg id="imgBanner" width="683" height="593" viewBox="0 0 683 593" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M200 371.253C206.4 368.453 219.333 365.753 225 364.753L416.5 350.253C421.333 349.586 434.9 349.453 450.5 354.253C470 360.253 483.5 374.753 489 381.253C494.5 387.753 503.5 386.253 510 389.253C516.5 392.253 512 395.753 521 400.753C530 405.753 552.5 403.253 560.5 405.253C568.5 407.253 602.5 429.753 608.5 435.753C614.5 441.753 613.5 455.253 617.5 461.753C621.5 468.253 645 484.253 652 491.253C657.6 496.853 673.667 559.919 681 590.753H2V545.753C5 515.253 84 408.753 89 402.753C94 396.753 112 394.253 118.5 391.753C125 389.253 130 377.753 143 375.753C156 373.753 165 382.753 174.5 383.253C184 383.753 192 374.753 200 371.253Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M216.5 413.753C214.5 407.753 225 391.919 230.5 384.753L259.5 403.253L276 445.253L340.5 447.253C361.5 421.753 403.9 369.253 405.5 363.253C407.5 355.753 420 359.753 429.5 360.753C439 361.753 448.5 395.753 437.5 410.753C426.5 425.753 421 441.753 400.5 481.753C380 521.753 350.5 550.253 336 558.753C321.5 567.253 292 555.253 282 550.253C272 545.253 273.5 525.253 271 516.753C268.5 508.253 261 500.753 252 493.753C243 486.753 244 464.253 233.5 441.753C223 419.253 219 421.253 216.5 413.753Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M255 425.253C254.2 411.653 251.333 404.586 250 402.753L369.5 332.253C397.333 307.253 449.4 266.753 435 304.753C417 352.253 414.5 413.253 407.5 441.253C400.5 469.253 354 500.253 321 500.253C288 500.253 263.15 472.982 258.5 462.753C256 457.253 256 442.253 255 425.253Z" fill="#1BEDF0" stroke="black"/>
+                            <path d="M215.525 113.253C213.925 116.853 218.525 120.753 221.025 122.253L384.025 129.253L426.025 301.753L449.525 241.253C458.859 237.253 478.225 228.353 481.025 224.753C484.525 220.253 483.525 205.753 484.025 197.253C484.525 188.753 489.525 183.424 489.525 176.753C489.525 170.753 486.025 167.753 488.025 163.753C490.025 159.753 489.525 155.253 488.025 150.253C486.525 145.253 485.525 143.253 488.025 134.753C490.525 126.253 490.025 108.253 481.025 100.253C472.025 92.2527 471.525 87.7527 468.525 79.7527C465.525 71.7527 460.025 68.2527 456.025 67.7527C452.025 67.2527 448.025 65.2527 446.025 61.2527C444.025 57.2527 443.025 59.2527 440.025 56.2527C437.025 53.2527 437.525 49.7527 434.025 49.2527C430.525 48.7527 427.025 47.7527 426.025 43.2527C425.025 38.7527 420.525 36.7527 417.025 38.2527C413.525 39.7527 386.525 21.7527 375.525 17.2527C364.525 12.7527 340.025 12.7526 330.025 11.7527C320.025 10.7527 313.025 0.252654 311.525 2.25265C310.025 4.25265 301.525 4.25265 296.025 4.25265C290.525 4.25265 292.025 7.75265 293.025 9.25265C294.025 10.7527 290.025 13.7526 287.025 12.7526C284.025 11.7526 273.025 14.2526 269.525 17.2526C266.025 20.2526 262.525 15.7526 256.525 17.2526C250.525 18.7526 234.025 29.2526 232.025 32.2526C230.025 35.2526 223.525 44.7526 219.025 48.2526C214.525 51.7526 215.525 60.2526 215.525 66.7526C215.525 73.2526 209.525 81.7526 209.025 86.7526C208.525 91.7526 215.525 93.7526 217.525 99.7526C219.525 105.753 217.525 108.753 215.525 113.253Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M255 425.253C254.2 411.653 251.333 404.586 250 402.753L369.5 332.253C397.333 307.253 449.4 266.753 435 304.753C417 352.253 414.5 413.253 407.5 441.253C400.5 469.253 354 500.253 321 500.253C288 500.253 263.15 472.982 258.5 462.753C256 457.253 256 442.253 255 425.253Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M243.506 85.9447C244.238 85.4742 245.022 85.1083 245.859 84.7423C267.924 75.2799 289.205 90.3361 296.996 90.3884C307.925 90.4407 335.376 75.1754 369.624 81.3442C394.043 85.7356 414.122 122.801 411.769 138.38C410.828 144.81 407.429 157.932 408.422 164.624C409.259 170.217 426.828 194.475 429.756 203.519C434.775 218.993 430.854 274.826 428.867 287.373C432.998 273.206 436.919 263.325 441.05 249.158C443.037 242.466 443.769 233.945 449.939 229.344C456.632 224.325 465.625 225.632 473.259 224.43C474.985 224.169 478.854 222.287 479.9 220.771C480.423 220.039 480.841 219.307 481.207 218.523C490.567 222.653 492.972 237.552 493.756 247.851C495.011 264.632 483.822 280.368 476.711 295.947C471.586 307.134 461.808 319.368 448.057 317.329C443.351 316.649 437.181 311.944 432.37 312.571C431.481 312.676 427.978 324.125 427.873 324.386C427.56 325.118 427.403 325.484 427.141 326.059C420.867 338.92 413.18 350.996 402.671 360.876C392.84 370.077 381.232 377.03 369.311 383.147C351.167 392.505 331.193 399.981 311.637 405.993C281.624 415.194 252.97 421.938 229.44 394.544C224.159 388.375 221.963 380.167 217.989 373.162C214.747 367.464 210.303 362.131 207.793 356.015C195.871 327.471 192.42 288.994 196.603 258.568C198.59 244.244 206.433 231.644 208.629 217.425C211.139 201.062 202.355 185.692 203.924 169.486C205.44 153.122 213.963 137.073 221.179 121.703C221.335 122.069 221.492 122.435 221.649 122.853C224.211 116.789 226.564 110.62 229.126 104.974C233.414 98.1778 237.702 91.7476 243.506 85.9447Z" fill="#1BEDF0" stroke="#138082" stroke-width="3" stroke-miterlimit="2.025" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M241.5 287.753C239 286.253 237.945 281.753 238.418 278.753C240.853 282.069 243.497 285.14 245.207 287.253C245.138 287.753 244 289.253 241.5 287.753Z" fill="#1BEDF0"/>
+                            <path d="M255.5 187.753C256.5 193.753 257 206.253 254.5 214.253C249.5 230.253 232.5 254.253 232.5 266.253C232.5 268.72 233.462 271.253 235 273.753M246 288.253C245.767 287.95 245.501 287.615 245.207 287.253M236 288.253C234.468 285.586 233 278.753 235 273.753M235 273.753C235.826 275.095 237.457 277.443 238.418 278.753M238.418 278.753C237.945 281.753 239 286.253 241.5 287.753C244 289.253 245.138 287.753 245.207 287.253M238.418 278.753C240.853 282.069 243.497 285.14 245.207 287.253" stroke="#138082" stroke-width="3"/>
+                            <path d="M280.5 286.253C281.5 284.253 279.5 280.253 273.5 278.753C270.426 277.984 266.093 278.952 262.5 280.185C264.5 282.374 268.8 286.553 272 287.753C276 289.253 279.606 288.042 280.5 286.253Z" fill="#1BEDF0"/>
+                            <path d="M257.5 282.253C258.698 281.654 260.483 280.878 262.5 280.185M262.5 280.185C266.093 278.952 270.426 277.984 273.5 278.753C279.5 280.253 281.5 284.253 280.5 286.253C279.606 288.042 276 289.253 272 287.753C268.8 286.553 264.5 282.374 262.5 280.185Z" stroke="#138082" stroke-width="3"/>
+                            <path d="M294 268.753C296.333 270.753 300.5 276.353 298.5 282.753C296.5 289.153 291.667 293.419 289.5 294.753" stroke="#138082" stroke-width="3"/>
+                            <path d="M221.5 183.753C235.9 182.953 244.167 199.753 246.5 208.253C230.895 214.495 221.062 213.281 215 209.616C212.321 207.996 210.379 205.898 209 203.753C207.554 197.648 207.13 185.472 220 183.885C220.481 183.826 220.981 183.782 221.5 183.753Z" fill="#1BEDF0"/>
+                            <path d="M235 160.253C252 166.253 254 183.753 252.5 185.753C250 188.753 236 175.753 228.5 173.253C221 170.753 210 174.253 208 174.253H208C206 174.253 204.5 174.253 203.5 171.753C202.5 169.253 218 154.253 235 160.253Z" fill="#1BEDF0"/>
+                            <path d="M220 183.885C220.481 183.826 220.981 183.782 221.5 183.753C235.9 182.953 244.167 199.753 246.5 208.253C230.895 214.495 221.062 213.281 215 209.616M220 183.885C207.13 185.472 207.554 197.648 209 203.753C210.379 205.898 212.321 207.996 215 209.616M220 183.885C223 186.675 226.5 192.253 225 199.253C223.697 205.334 219.5 209.253 215 209.616M252.5 185.753C254 183.753 252 166.253 235 160.253C218 154.253 202.5 169.253 203.5 171.753C204.5 174.253 206 174.253 208 174.253C210 174.253 221 170.753 228.5 173.253C236 175.753 250 188.753 252.5 185.753Z" stroke="#138082" stroke-width="3"/>
+                            <path d="M301 180.252C289 182.252 285.5 178.252 284.5 173.752C310.5 155.252 346.585 150.545 368 161.253C390 172.253 393 188.752 390.5 190.752C388 192.752 372 175.752 353.5 171.752C335 167.752 313 178.252 301 180.252Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M245.5 333.753C240 333.753 226.333 333.253 219.5 333.753C224 330.253 240.049 322.743 242.5 322.253C247.5 321.253 252 324.753 255 324.753C257.062 324.753 267.5 321.253 273 322.753C279.345 324.483 318 341.753 317 343.753C316 345.753 271.5 334.753 267 334.753C262.5 334.753 257 337.253 255 337.253C253 337.253 251.201 333.753 245.5 333.753Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M300 351.752C303.313 344.574 305.5 340.253 303 339.253C300.5 338.253 296.5 345.753 295.5 348.253C294.5 350.753 291.356 357.966 293.5 359.252C296 360.753 297 358.252 300 351.752Z" fill="#1BEDF0"/>
+                            <path d="M335 185.253C350.5 186.253 359.5 199.253 362.5 206.253C357.333 209.919 343.2 217.053 332 216.253C326.299 215.845 320.961 214.298 316.5 212.218C312.197 210.211 308.709 207.708 306.5 205.253C307.933 200.238 313.984 191.631 323 187.52C326.57 185.892 330.604 184.969 335 185.253Z" fill="#1BEDF0"/>
+                            <path d="M234.5 354.252C236.167 355.252 239.5 356.252 241.5 356.252C244 356.252 248.5 355.252 252 355.752C255.5 356.252 258.5 358.252 261.5 358.252C264.5 358.252 274.5 357.752 277.5 357.252M323 187.52C313.984 191.631 307.933 200.238 306.5 205.253C308.709 207.708 312.197 210.211 316.5 212.218M323 187.52C326.57 185.892 330.604 184.969 335 185.253C350.5 186.253 359.5 199.253 362.5 206.253C357.333 209.919 343.2 217.053 332 216.253C326.299 215.845 320.961 214.298 316.5 212.218M323 187.52C329 188.753 331.5 196.753 329 202.753C324.902 212.589 318.667 213.027 316.5 212.218M303 339.253C305.5 340.253 303.313 344.574 300 351.752C297 358.252 296 360.753 293.5 359.252C291.356 357.966 294.5 350.753 295.5 348.253C296.5 345.753 300.5 338.253 303 339.253Z" stroke="#138082" stroke-width="3"/>
+                            <path d="M199.5 153.753L210 156.253C212.5 159.753 207 164.753 206 163.753C205.2 162.953 201.333 156.753 199.5 153.753Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M197 184.692L204.7 177.129C208.994 176.872 210.304 184.189 208.925 184.504C207.822 184.756 200.516 184.734 197 184.692Z" fill="#1BEDF0" stroke="#138082" stroke-width="3"/>
+                            <path d="M443 293.753C444 290.753 446.8 284.253 450 282.253C454 279.753 459 279.253 458 274.253C457 269.253 445.5 261.753 447 257.753C448.5 253.753 469 234.753 472.5 235.753C476 236.753 479 239.753 480.5 247.753C482 255.753 481 269.753 479 274.253C477 278.753 468 285.753 467 288.753C466 291.753 460.5 299.253 456.5 301.753" stroke="#138082" stroke-width="3"/>
+                            <path d="M459.5 244.253C466 248.919 477.2 262.153 470 277.753" stroke="#138082" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END BANNER -->
+
+        <!-- PORTFOLIO -->
+        <section class="section-portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <h1 class="title-section">Portafolio</h1>
+                        <div class="paragraph">
+                            <p>He aquí una pequeña presentación de algunos de mis trabajos. En algunos de ellos he  participado desde el inicio del proyecto realizando el diseño y en otros solo he realizado la maquetación, para conocer más sobre mis trabajos haz clic en el botón ver más.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-md-flex align-items-center">
+                        <a href="portafolio.html" class="hvr-bounce-to-right my-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider -->
+        <div class="regular slider slider-project">
+            <div>
+                <!-- card 1 -->
+                <div class="card-project card-aFood" data-bs-toggle="modal" data-bs-target="#modal-akiraFood">
+                    <div class="selected" >
+                        <div>
+                            <i class="fas fa-eye text-white"></i>
+                            <p>Ver proyecto</p>
+                        </div>
+                    </div>
+                    <div class="cont-img-card">
+                        <img src="img/projects/cards/akira-food.svg" alt="Akira food class="img-fluid"">
+                    </div>
+                    <p>Akira Food</p>
+                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                </div>
+                <!-- end card 1 -->
+            </div>
+            <div>
+                <!-- card 2 -->
+                <div class="card-project card-mj" data-bs-toggle="modal" data-bs-target="#modal-mj">
+                    <div class="selected">
+                        <div>
+                            <i class="fas fa-eye text-white"></i>
+                            <p>Ver proyecto</p>
+                        </div>
+                    </div>
+                    <div class="cont-img-card">
+                        <img src="img/projects/cards/mj-fest.svg" alt="Mundo Joven Fest" class="img-fluid">
+                    </div>
+                    <p>Mundo Joven Fest</p>
+                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                </div>
+                <!-- end card 2 -->
+            </div>
+            <div>
+                <!-- card 3 -->
+                <div class="card-project card-nuad" data-bs-toggle="modal" data-bs-target="#modal-nuad">
+                    <div class="selected">
+                        <div>
+                            <i class="fas fa-eye text-white"></i>
+                            <p>Ver proyecto</p>
+                        </div>
+                    </div>
+                    <div class="cont-img-card">
+                        <img src="img/projects/cards/nuad.svg" alt="UX Núad" class="img-fluid">
+                    </div>
+                    <p>UX Núad</p>
+                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                </div>
+                <!-- card 3 -->
+            </div>
+            <div>
+                <!-- card 4 -->
+                <div class="card-project card-mezcal" data-bs-toggle="modal" data-bs-target="#modal-mezcalera">
+                    <div class="selected">
+                        <div>
+                            <i class="fas fa-eye text-white"></i>
+                            <p>Ver proyecto</p>
+                        </div>
+                    </div>
+                    <div class="cont-img-card">
+                        <img src="img/projects/cards/mezcalera.svg" alt="Mezcalera Oaxaca" class="img-fluid">
+                    </div>
+                    <p>Mezcalera Oaxaca</p>
+                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                </div>
+                <!-- end card 4 -->
+            </div>
+        </div>
+        <!-- end slider -->
+        <!-- END PORTFOLIO -->
+
+        <!-- SKILLS -->
+        <section class="section-skills bgYellow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="title-section">Habilidades</h1>
+                        <div class="paragraph">
+                            <p>Tengo más de 5 años dIseñando productos para diversas plataformas como son el web, aplicaciones android o iOS. Desarrollados en HTML, CSS, Javascript y en softwares como Figma, Visual Studio Code, entre otros.</p>
+                            <a href="habilidades.html" class="hvr-bounce-to-right mt-3 mb-5">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="img-custom">
+                            <div class="cont-bg-img">
+                                <img src="img/custom/skill-bg.svg" alt="skills" class="bg-img">
+                                <div class="cont-balder"><img src="img/custom/skill1.png"></div>
+                            </div>
+                            <img src="img/custom/skills2.png" class="yopSkill">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SKILLS -->
+
+        <!-- CONTACT -->
+        <section class="section-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="title-section">Contacto</h1>
+                                <div class="paragraph">
+                                    <p>Si tienes alguna duda puedes contactarme desde este formulario o enviarme un mensaje en alguna de mis redes sociales.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <form id="reused_form">
+                                    <div class="cont-input">
+                                        <input type="text" name="name" id="nombre" class="form-user" required>
+                                        <label class="name-data" for="nombre">Tu nombre</label>
+                                        <span class="bar"></span>
+                                    </div>
+                
+                                    <div class="cont-input">
+                                        <input type="email" name="email" id="correo" class="form-user" required>
+                                        <label class="name-data" for="correo">Tu mail</label>
+                                        <span class="bar"></span>
+                                    </div>
+                                    <div class="cont-input">
+                                        <textarea name="message" id="mensaje" class="w-100 form-user" required></textarea>
+                                        <label class="name-data name-textarea" for="mensaje">Escribe aquí lo que quieras</label>
+                                        <span class="bar"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="hvr-bounce-to-right btn-black">Enviar</button>
+                                    </div>
+                                </form>
+                                <div id="error_message" style="width:100%; height:100%; display:none;">
+                                    <div class="send-successful">
+                                        <h2>¡Oh-oh!</h2>
+                                        <p>Algo salió mal</p>
+                                        <p>y no pude mandar tu correo.</p>
+                                        <hr class="send">
+                                        <div class="img-send">
+                                            <img src="img/send-fail.svg" alt="eMail no enviado" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="success_message" style="width:100%; height:100%; display:none;">
+                                    <div class="send-successful">
+                                        <h2>¡GRACIAS!</h2>
+                                        <p>Tu mensaje se ha enviado correctamente,</p>
+                                        <p>en breve te responderé.</p>
+                                        <hr class="send">
+                                        <div class="img-send">
+                                            <img src="img/send-successful.svg" alt="eMail enviado" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-end">
+                        <div class="img-custom">
+                            <div class="cont-bg-img">
+                                <img src="img/custom/contact-bg.svg" alt="Contáctame" class="bg-img">
+                            </div>
+                            <img src="img/custom/contact-airplane.png" class="airplane">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CONTACT -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col text-center d-flex justify-content-center align-items-center">
+                        <p>Todos los derechos reservados 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- MODAL AKIRA FOOD -->
+        <div class="modal fade" id="modal-akiraFood" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-project">
+                <div class="modal-content bgGray">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body dispositives">
+                        <div class="img-desk">
+                            <img src="img/projects/img-desk.svg">
+                            <div class="screen-desk">
+                                <img src="img/projects/webs/Akira-Food-desk.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="img-mobile">
+                            <img src="img/projects/img-mobile.svg">
+                            <div class="screen-mobile">
+                                <img src="img/projects/webs/Akira-Food-mobile.jpg" class="img-fluid">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer border-0 bg-light d-block p-0">
+                        <a href="https://akira-food.vercel.app/" target="_blank" class="btn-modal">Visitar sitio</a>  
+                        <div class="p-3">
+                            <p class="fs-4 fw-bold mb-3">Akira Food</p>
+                            <p>Diseño de sitio web dedicado a la venta de comida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL AKIRA FOOD -->
+
+        <!-- MODAL MJ -->
+        <div class="modal fade" id="modal-mj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-project">
+                <div class="modal-content bgGray">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body dispositives">
+                        <div class="img-desk">
+                            <img src="img/projects/img-desk.svg">
+                            <div class="screen-desk">
+                                <img src="img/projects/webs/MJ-fest-desk.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="img-mobile">
+                            <img src="img/projects/img-mobile.svg">
+                            <div class="screen-mobile">
+                                <img src="img/projects/webs/MJ-fest-mobile.jpg" class="img-fluid">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer border-0 bg-light d-block p-0">
+                        <a href="https://proyectos-omega.vercel.app/MJ-fest/home.html" target="_blank" class="btn-modal">Visitar sitio</a>  
+                        <div class="p-3">
+                            <p class="fs-4 fw-bold mb-3">Mundo Joven Fest</p>
+                            <p>Para este proyecto se me proporcionó el diseño, en el cual realicé la maquetación, esta One Page sirvió para la expo realizada por mundo joven la cual ofrece viajes y estudios en el extranjero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL MJ -->
+
+        <!-- MODAL NUAD -->
+        <div class="modal fade" id="modal-nuad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-project">
+                <div class="modal-content bgGray">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body dispositives">
+                        <div class="img-tablet">
+                            <img src="img/projects/img-tablet.svg">
+                            <div class="screen-tablet">
+                                <!-- carousel modal -->
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/projects/webs/Nuad-ux1.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/projects/webs/Nuad1.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/projects/webs/Nuad-ux2.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/projects/webs/Nuad-ux2.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- end carousel modal -->
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer border-0 bg-light d-block p-0">
+                        <a href="https://proyectos-omega.vercel.app/MJ-fest/home.html" target="_blank" class="btn-modal">Visitar sitio</a>  
+                        <div class="p-3">
+                            <p class="fs-4 fw-bold mb-3">Mundo Joven Fest</p>
+                            <p>Para este proyecto se me proporcionó el diseño, en el cual realicé la maquetación, esta One Page sirvió para la expo realizada por mundo joven la cual ofrece viajes y estudios en el extranjero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL NUAD -->
+
+        <!-- MODAL MEZCALERA -->
+        <div class="modal fade" id="modal-mezcalera" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-project">
+                <div class="modal-content bgGray">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body dispositives">
+                        <div class="img-desk">
+                            <img src="img/projects/img-desk.svg">
+                            <div class="screen-desk">
+                                <img src="img/projects/webs/mezcalera-desk.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="img-mobile">
+                            <img src="img/projects/img-mobile.svg">
+                            <div class="screen-mobile">
+                                <img src="img/projects/webs/mezcalera-mobile.jpg" class="img-fluid">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer border-0 bg-light d-block p-0">
+                        <a href="https://mezcaleraoaxaca.com/" target="_blank" class="btn-modal">Visitar sitio</a>  
+                        <div class="p-3">
+                            <p class="fs-4 fw-bold mb-3">Mundo Joven Fest</p>
+                            <p>Para este proyecto se me proporcionó el diseño, en el cual realicé la maquetación, esta One Page sirvió para la expo realizada por mundo joven la cual ofrece viajes y estudios en el extranjero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL MEZCALERA -->
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
