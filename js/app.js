@@ -56,7 +56,5 @@ $(document).on('ready', function() {
   
   });
   //SLICKY SLIDER
-
-  
   
   
