@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de trabajos: web, ilustraciones y animaciones">
+    <meta name="keywords" content="Diseño Web, UI, UX, Ilustraciones, Animaciones">
+    <meta name="robots" content="index,follow">
+
+    <title>Portafolio</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="img/favicon/favicon.ico">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/113a378e2b.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- SIDE NAV -->
+    <nav class="sideNav">
+        <div class="cont-sidenav">
+            <ul>
+                <li id="logo">
+                    <a href="index.html">
+                        <svg id="logo" width="68" height="50" viewBox="0 0 68 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+                            <path d="M14.9154 19.3427H12.1606V25.4821H8.69739V8.69733H14.9351C16.9225 8.69733 18.4573 9.13023 19.5199 10.0157C20.5825 10.9012 21.1334 12.1409 21.1334 13.7544C21.1334 14.8957 20.8776 15.8599 20.3857 16.6273C19.8938 17.3947 19.146 18.0047 18.1228 18.4573L21.7631 25.3246V25.4821H18.0638L14.9154 19.3427ZM12.1606 16.5486H14.9548C15.8206 16.5486 16.4896 16.3321 16.9815 15.8795C17.4735 15.427 17.6899 14.8366 17.6899 14.0496C17.6899 13.2625 17.4735 12.6328 17.0209 12.1802C16.5683 11.7276 15.8599 11.5112 14.9351 11.5112H12.1606V16.5486Z" fill="white"/>
+                            <path d="M23.0225 19.146C23.0225 17.9064 23.2586 16.8044 23.7308 15.8402C24.2031 14.8761 24.8918 14.1283 25.797 13.597C26.7021 13.0657 27.7253 12.8099 28.906 12.8099C30.5982 12.8099 31.956 13.3215 33.0185 14.3644C34.0811 15.4073 34.6714 16.7847 34.8092 18.5557L34.8288 19.4018C34.8288 21.3105 34.2975 22.8454 33.235 24.0063C32.1724 25.1673 30.736 25.7379 28.9256 25.7379C27.1153 25.7379 25.6986 25.1673 24.6163 24.0063C23.5341 22.8454 23.0225 21.2712 23.0225 19.2838V19.146ZM26.3676 19.3822C26.3676 20.5628 26.5841 21.4679 27.0366 22.0976C27.4892 22.7273 28.1189 23.0421 28.9453 23.0421C29.7521 23.0421 30.3818 22.7273 30.8343 22.1173C31.2869 21.5073 31.5231 20.5038 31.5231 19.146C31.5231 17.9851 31.2869 17.0799 30.8343 16.4502C30.3818 15.8206 29.7521 15.486 28.9256 15.486C28.1189 15.486 27.4892 15.8009 27.0366 16.4306C26.5841 17.0602 26.3676 18.0441 26.3676 19.3822Z" fill="white"/>
+                            <path d="M48.1504 19.3624C48.1504 21.3695 47.7175 22.924 46.8713 24.0456C46.0252 25.1672 44.8249 25.7182 43.2901 25.7182C41.9323 25.7182 40.8501 25.2066 40.0433 24.1637L39.8859 25.4821H36.895V7.77252H40.2204V14.1283C40.9878 13.2231 41.9914 12.7706 43.2507 12.7706C44.7659 12.7706 45.9662 13.3215 46.832 14.4431C47.6978 15.5647 48.1307 17.1389 48.1307 19.1657V19.3624H48.1504ZM44.8052 19.1263C44.8052 17.867 44.6085 16.9421 44.2149 16.3715C43.8214 15.8009 43.2114 15.5057 42.4243 15.5057C41.3617 15.5057 40.6336 15.9386 40.2401 16.8044V21.7237C40.6533 22.6092 41.3814 23.0421 42.4636 23.0421C43.5459 23.0421 44.2543 22.5108 44.5888 21.4482C44.7265 20.9366 44.8052 20.1692 44.8052 19.1263Z" fill="white"/>
+                            <path d="M29.693 41.4798C27.863 41.4798 26.3676 40.9091 25.2263 39.7875C24.085 38.6659 23.4947 37.1704 23.4947 35.3011V34.9863C23.4947 33.7269 23.7308 32.6053 24.2228 31.6214C24.7147 30.6376 25.3837 29.8702 26.2889 29.3389C27.194 28.8076 28.1976 28.5321 29.3192 28.5321C31.0311 28.5321 32.3692 29.0634 33.353 30.1456C34.3369 31.2279 34.8288 32.743 34.8288 34.7305V36.0882H26.8792C26.9776 36.895 27.3121 37.564 27.863 38.0559C28.414 38.5478 29.083 38.8036 29.9292 38.8036C31.2082 38.8036 32.2117 38.3314 32.9398 37.4066L34.573 39.2366C34.0811 39.9449 33.3924 40.4959 32.5462 40.8894C31.7001 41.283 30.7359 41.4798 29.693 41.4798ZM29.3192 31.2279C28.6501 31.2279 28.1189 31.4443 27.7056 31.8969C27.2924 32.3495 27.0366 32.9792 26.9185 33.8253H31.5624V33.5498C31.5427 32.8021 31.3459 32.2314 30.9721 31.8379C30.5982 31.4443 30.0276 31.2279 29.3192 31.2279Z" fill="white"/>
+                            <path d="M40.2401 41.2436H36.895V19.1263H40.2401V41.2436Z" fill="white"/>
+                            <path d="M48.17 38.784C48.78 38.784 49.2916 38.6069 49.6655 38.2724C50.0393 37.9379 50.2558 37.4853 50.2558 36.9146H53.3845C53.3845 37.7608 53.1484 38.5282 52.6958 39.2366C52.2432 39.9449 51.6135 40.4762 50.8264 40.8698C50.0393 41.2633 49.1735 41.4601 48.2094 41.4601C46.4187 41.4601 45.0216 40.8894 43.9984 39.7678C42.9752 38.6462 42.4439 37.072 42.4439 35.065V34.8485C42.4439 32.9201 42.9555 31.3853 43.9787 30.244C45.002 29.1027 46.399 28.5321 48.1897 28.5321C49.7442 28.5321 51.0035 28.9847 51.948 29.8702C52.8926 30.7556 53.3648 31.9363 53.3845 33.4121H50.2558C50.2361 32.7627 50.0393 32.2314 49.6655 31.8379C49.2916 31.4443 48.78 31.2279 48.1503 31.2279C47.3829 31.2279 46.7926 31.5034 46.399 32.074C46.0055 32.6447 45.8087 33.5498 45.8087 34.8288V35.183C45.8087 36.4621 46.0055 37.3869 46.399 37.9575C46.7729 38.5085 47.3632 38.784 48.17 38.784Z" fill="white"/>
+                            <path d="M58.7958 41.2436H55.4506V28.7682H58.7958V41.2436Z" fill="white"/>
+                            <path d="M7.22157 0H2.79418H0V2.79418V7.22157H2.79418V2.79418H7.22157V0Z" fill="white"/>
+                            <path d="M67.4144 7.22157V2.79418V0H64.6202H60.2125V2.79418H64.6202V7.22157H67.4144Z" fill="white"/>
+                            <path d="M60.2125 49.882H64.6202H67.4144V47.0878V42.6604H64.6202V47.0878H60.2125V49.882Z" fill="white"/>
+                            <path d="M0 42.7784V47.2058V50H2.79418H7.22157V47.2058H2.79418V42.7784H0Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="sobre-mi.html">
+                        <i class="fas fa-smile-wink"></i>
+                        <p class="text-xs">Sobre mí</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="habilidades.html">
+                        <i class="fas fa-paint-brush"></i>
+                        <p class="text-xs">Habilidades</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="portafolio.html">
+                        <i class="fas fa-briefcase"></i>
+                        <p class="text-xs">Portafolio</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="contactame">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <p class="text-xs">Contáctame</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://www.linkedin.com/in/robelci-mg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/robelci_manuel/" target="_blank" class="mx-1"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=525538650995" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- END SIDE NAV -->
+    
+    <!-- FAB NAV -->
+    <div class="fabNav" data-bs-toggle="modal" data-bs-target="#modal-nav">
+        <i class="fas fa-hamburger"></i>
+    </div>
+    <!-- END FAB NAV -->
+    
+    <!-- MODAL NAV -->
+    <div class="modal fade" id="modal-nav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-project">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li id="logo">
+                            <a href="index.html">
+                                <svg id="logo" width="68" height="50" viewBox="0 0 68 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+                                    <path d="M14.9154 19.3427H12.1606V25.4821H8.69739V8.69733H14.9351C16.9225 8.69733 18.4573 9.13023 19.5199 10.0157C20.5825 10.9012 21.1334 12.1409 21.1334 13.7544C21.1334 14.8957 20.8776 15.8599 20.3857 16.6273C19.8938 17.3947 19.146 18.0047 18.1228 18.4573L21.7631 25.3246V25.4821H18.0638L14.9154 19.3427ZM12.1606 16.5486H14.9548C15.8206 16.5486 16.4896 16.3321 16.9815 15.8795C17.4735 15.427 17.6899 14.8366 17.6899 14.0496C17.6899 13.2625 17.4735 12.6328 17.0209 12.1802C16.5683 11.7276 15.8599 11.5112 14.9351 11.5112H12.1606V16.5486Z" fill="white"/>
+                                    <path d="M23.0225 19.146C23.0225 17.9064 23.2586 16.8044 23.7308 15.8402C24.2031 14.8761 24.8918 14.1283 25.797 13.597C26.7021 13.0657 27.7253 12.8099 28.906 12.8099C30.5982 12.8099 31.956 13.3215 33.0185 14.3644C34.0811 15.4073 34.6714 16.7847 34.8092 18.5557L34.8288 19.4018C34.8288 21.3105 34.2975 22.8454 33.235 24.0063C32.1724 25.1673 30.736 25.7379 28.9256 25.7379C27.1153 25.7379 25.6986 25.1673 24.6163 24.0063C23.5341 22.8454 23.0225 21.2712 23.0225 19.2838V19.146ZM26.3676 19.3822C26.3676 20.5628 26.5841 21.4679 27.0366 22.0976C27.4892 22.7273 28.1189 23.0421 28.9453 23.0421C29.7521 23.0421 30.3818 22.7273 30.8343 22.1173C31.2869 21.5073 31.5231 20.5038 31.5231 19.146C31.5231 17.9851 31.2869 17.0799 30.8343 16.4502C30.3818 15.8206 29.7521 15.486 28.9256 15.486C28.1189 15.486 27.4892 15.8009 27.0366 16.4306C26.5841 17.0602 26.3676 18.0441 26.3676 19.3822Z" fill="white"/>
+                                    <path d="M48.1504 19.3624C48.1504 21.3695 47.7175 22.924 46.8713 24.0456C46.0252 25.1672 44.8249 25.7182 43.2901 25.7182C41.9323 25.7182 40.8501 25.2066 40.0433 24.1637L39.8859 25.4821H36.895V7.77252H40.2204V14.1283C40.9878 13.2231 41.9914 12.7706 43.2507 12.7706C44.7659 12.7706 45.9662 13.3215 46.832 14.4431C47.6978 15.5647 48.1307 17.1389 48.1307 19.1657V19.3624H48.1504ZM44.8052 19.1263C44.8052 17.867 44.6085 16.9421 44.2149 16.3715C43.8214 15.8009 43.2114 15.5057 42.4243 15.5057C41.3617 15.5057 40.6336 15.9386 40.2401 16.8044V21.7237C40.6533 22.6092 41.3814 23.0421 42.4636 23.0421C43.5459 23.0421 44.2543 22.5108 44.5888 21.4482C44.7265 20.9366 44.8052 20.1692 44.8052 19.1263Z" fill="white"/>
+                                    <path d="M29.693 41.4798C27.863 41.4798 26.3676 40.9091 25.2263 39.7875C24.085 38.6659 23.4947 37.1704 23.4947 35.3011V34.9863C23.4947 33.7269 23.7308 32.6053 24.2228 31.6214C24.7147 30.6376 25.3837 29.8702 26.2889 29.3389C27.194 28.8076 28.1976 28.5321 29.3192 28.5321C31.0311 28.5321 32.3692 29.0634 33.353 30.1456C34.3369 31.2279 34.8288 32.743 34.8288 34.7305V36.0882H26.8792C26.9776 36.895 27.3121 37.564 27.863 38.0559C28.414 38.5478 29.083 38.8036 29.9292 38.8036C31.2082 38.8036 32.2117 38.3314 32.9398 37.4066L34.573 39.2366C34.0811 39.9449 33.3924 40.4959 32.5462 40.8894C31.7001 41.283 30.7359 41.4798 29.693 41.4798ZM29.3192 31.2279C28.6501 31.2279 28.1189 31.4443 27.7056 31.8969C27.2924 32.3495 27.0366 32.9792 26.9185 33.8253H31.5624V33.5498C31.5427 32.8021 31.3459 32.2314 30.9721 31.8379C30.5982 31.4443 30.0276 31.2279 29.3192 31.2279Z" fill="white"/>
+                                    <path d="M40.2401 41.2436H36.895V19.1263H40.2401V41.2436Z" fill="white"/>
+                                    <path d="M48.17 38.784C48.78 38.784 49.2916 38.6069 49.6655 38.2724C50.0393 37.9379 50.2558 37.4853 50.2558 36.9146H53.3845C53.3845 37.7608 53.1484 38.5282 52.6958 39.2366C52.2432 39.9449 51.6135 40.4762 50.8264 40.8698C50.0393 41.2633 49.1735 41.4601 48.2094 41.4601C46.4187 41.4601 45.0216 40.8894 43.9984 39.7678C42.9752 38.6462 42.4439 37.072 42.4439 35.065V34.8485C42.4439 32.9201 42.9555 31.3853 43.9787 30.244C45.002 29.1027 46.399 28.5321 48.1897 28.5321C49.7442 28.5321 51.0035 28.9847 51.948 29.8702C52.8926 30.7556 53.3648 31.9363 53.3845 33.4121H50.2558C50.2361 32.7627 50.0393 32.2314 49.6655 31.8379C49.2916 31.4443 48.78 31.2279 48.1503 31.2279C47.3829 31.2279 46.7926 31.5034 46.399 32.074C46.0055 32.6447 45.8087 33.5498 45.8087 34.8288V35.183C45.8087 36.4621 46.0055 37.3869 46.399 37.9575C46.7729 38.5085 47.3632 38.784 48.17 38.784Z" fill="white"/>
+                                    <path d="M58.7958 41.2436H55.4506V28.7682H58.7958V41.2436Z" fill="white"/>
+                                    <path d="M7.22157 0H2.79418H0V2.79418V7.22157H2.79418V2.79418H7.22157V0Z" fill="white"/>
+                                    <path d="M67.4144 7.22157V2.79418V0H64.6202H60.2125V2.79418H64.6202V7.22157H67.4144Z" fill="white"/>
+                                    <path d="M60.2125 49.882H64.6202H67.4144V47.0878V42.6604H64.6202V47.0878H60.2125V49.882Z" fill="white"/>
+                                    <path d="M0 42.7784V47.2058V50H2.79418H7.22157V47.2058H2.79418V42.7784H0Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="sobre-mi.html">
+                                <i class="fas fa-smile-wink"></i>
+                                <p class="text-xs">Sobre mí</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="habilidades.html">
+                                <i class="fas fa-paint-brush"></i>
+                                <p class="text-xs">Habilidades</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="portafolio.html">
+                                <i class="fas fa-briefcase"></i>
+                                <p class="text-xs">Portafolio</p>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="contactame">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <p class="text-xs">Contáctame</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="https://www.linkedin.com/in/robelci-mg/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/robelci_manuel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=525538650995" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL NAV -->
+    
+    <main class="main-content">
+        <section class="section-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="title-section">Portafolio</h1>
+                        <div class="">
+                            <p class="mb-2">Aquí puedes encontrar algunos trabajos en los que he participado. Podrás ver proyectos web, aplicaciones, ilustraciones a mano y en digital y algunas animaciones.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-start">
+                        <div class="img-custom-portfolio">
+                            <img src="img/custom/portfolio-bg.svg" alt="skills" class="img-fluid">
+                            <img src="img/custom/portfolio.png" class="yop-portfolio img-fluid" data-aos="fade-left">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="button-group filters-button-group filters-projects">
+                            <button class="btn-filter is-checked" data-filter="*">Todos</button>
+                            <button class="btn-filter" data-filter=".project">Proyectos</button>
+                            <button class="btn-filter" data-filter=".illustration">Ilustraciones</button>
+                            <button class="btn-filter" data-filter=".animation">Animaciones</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="filter grid-container-projects">
+                            <!-- ------- Project -------- -->
+                            <div class="w-100 item-filter project filter-title">
+                                <h1 class="title-section">Proyectos</h1>
+                            </div>
+                            
+                            <!-- card mj -->
+                            <div class="card-project card-mj item-filter project" data-bs-toggle="modal" data-bs-target="#modal-mj" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/mj-fest.svg" alt="Mundo Joven Fest" class="img-fluid">
+                                </div>
+                                <p>Mundo Joven Fest</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card mj -->
+
+                            <!-- card np -->
+                            <div class="card-project card-np item-filter project" data-bs-toggle="modal" data-bs-target="#modal-np" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/noches-premio.svg" alt="Noches Premio" class="img-fluid">
+                                </div>
+                                <p>Noches Premio</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card np -->
+
+                            <!-- card np -->
+                            <div class="card-project card-appMJ item-filter project" data-bs-toggle="modal" data-bs-target="#modal-appMJ" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/app-scanner.svg" alt="App Scanner" class="img-fluid">
+                                </div>
+                                <p>App Scanner</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card np -->
+
+                            <!-- card rci -->
+                            <div class="card-project card-rci item-filter project" data-bs-toggle="modal" data-bs-target="#modal-rci" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/rci.svg" alt="RCI Travel" class="img-fluid">
+                                </div>
+                                <p>RCI Travel</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card rci -->
+
+                            <!-- card nuad -->
+                            <div class="card-project card-nuad item-filter project" data-bs-toggle="modal" data-bs-target="#modal-nuad" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/nuad.svg" alt="UX Núad" class="img-fluid">
+                                </div>
+                                <p>UX Núad</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- card nuad -->
+
+                            <!-- card bancoppel -->
+                            <div class="card-project card-bancoppel item-filter project" data-bs-toggle="modal" data-bs-target="#modal-bancoppel" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/bancoppel.svg" alt="Bancoppel" class="img-fluid">
+                                </div>
+                                <p>Bancoppel</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card bancoppel -->
+
+                            <!-- card Santander -->
+                            <div class="card-project card-santander item-filter project" data-bs-toggle="modal" data-bs-target="#modal-santander" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/santander.svg" alt="Home Santander" class="img-fluid">
+                                </div>
+                                <p>Home Santander</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card Santander -->
+
+                            <!-- card trust-U -->
+                            <div class="card-project card-trust item-filter project" data-bs-toggle="modal" data-bs-target="#modal-trust" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/trustu.svg" alt="App Trust-U" class="img-fluid">
+                                </div>
+                                <p>App Trust-U</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card trust-U -->
+
+                            <!-- card MTK -->
+                            <div class="card-project card-mtk item-filter project" data-bs-toggle="modal" data-bs-target="#modal-mtk" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/mtk.svg" alt="Mother Travel Knowledge" class="img-fluid">
+                                </div>
+                                <p>Mother Travel Knowledge</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card MTK -->
+
+                            <!-- card Akemi -->
+                            <div class="card-project card-akemi item-filter project" data-bs-toggle="modal" data-bs-target="#modal-akemi" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/akemi.svg" alt="Akemi" class="img-fluid">
+                                </div>
+                                <p>Akemi</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card Akemii -->
+
+                            <!-- card Akira Bakery -->
+                            <div class="card-project card-aBakery item-filter project" data-bs-toggle="modal" data-bs-target="#modal-aBakery" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/akira-bakery.svg" alt="Akira Bakery" class="img-fluid">
+                                </div>
+                                <p>Akira Bakery</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card Akira Bakery -->
+
+                            <!-- card akira food -->
+                            <div class="card-project card-aFood item-filter project" data-bs-toggle="modal" data-bs-target="#modal-akiraFood" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/akira-food.svg" alt="Akira food" class="img-fluid">
+                                </div>
+                                <p>Akira Food</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card akira food -->
+
+                            <!-- card mezcalera -->
+                            <div class="card-project card-mezcal item-filter project" data-bs-toggle="modal" data-bs-target="#modal-mezcalera" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver proyecto</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/projects/cards/mezcalera.svg" alt="Mezcalera Oaxaca" class="img-fluid">
+                                </div>
+                                <p>Mezcalera Oaxaca</p>
+                                <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                            </div>
+                            <!-- end card mezcalera -->
+
+                            <!-- ------- Illustrations -------- -->
+                            <div class="w-100 item-filter illustration filter-title">
+                                <h1 class="title-section">Ilustraciones</h1>
+                            </div>
+                            <!-- card ff -->
+                            <div class="card-project card-Illustration item-filter illustration" data-bs-toggle="modal" data-bs-target="#modal-mj" data-aos="zoom-in">
+                                <div class="selected">
+                                    <div>
+                                        <i class="fas fa-eye text-white"></i>
+                                        <p>Ver Ilustración</p>
+                                    </div>
+                                </div>
+                                <div class="cont-img-card">
+                                    <img src="img/Illustrations/cards/card-ff.jpg" alt="Final Fantasy">
+                                </div>
+                                <p class="d-block d-md-none small fw-light">- Ver Ilustración -</p>
+                            </div>
+                            <!-- end card ff -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROJECTS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Filter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/filterApp.js"></script>
+    <script src="js/app.js"></script>
+    <!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // INITIALIZE AOS
+            AOS.init();
+        // END INITIALIZE AOS
+    </script>
+</body>
+</html>

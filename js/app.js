@@ -2,7 +2,7 @@
 // external js: isotope.pkgd.js
 
 // init Isotope
-var $grid = $('.grid-container').isotope({
+var $grid = $('.filter').isotope({
   itemSelector: '.item-filter',
   layoutMode: 'fitRows'
 });

@@ -701,8 +701,44 @@ section {
     background: #F46593;
 }
 
+.card-np {
+    background: #83CEF1;
+}
+
+.card-appMJ {
+    background: #FFCA7B;
+}
+
+.card-rci {
+    background: #A6B3F6;
+}
+
 .card-nuad {
     background: #5DBCEA;
+}
+
+.card-bancoppel {
+    background: #FFDE33;
+}
+
+.card-santander {
+    background: #D73737;
+}
+
+.card-trust {
+    background: #0071CF;
+}
+
+.card-mtk {
+    background: #DEDEDE;
+}
+
+.card-akemi {
+    background: #93C8F5;
+}
+
+.card-aBakery {
+    background: #D07B4D;
 }
 
 .card-aFood {
@@ -1104,7 +1140,7 @@ textarea.form-user {
 @media (max-width: 376px) {
 
     .cont-footer p {
-        font-size: 14px!important;
+        font-size: 14px;
     }
 }
 /* END FOOTER */
@@ -1153,7 +1189,7 @@ textarea.form-user {
     margin: 0 auto;
     top: inherit!important;
     left: inherit!important;
-    transition-duration: 0.4s;
+    /* transition-duration: 0.4s; */
 }
 
 .content-tool:hover{
@@ -1183,10 +1219,16 @@ textarea.form-user {
 
 .clipImg {
     position: absolute;
-    left: -13px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
     transition: 1s cubic-bezier(0.25, 0.24, 0.76, 0.74);
     z-index: -1;
+}
+
+.clipImg path {
+    stroke: #fff;
+    stroke-width: 1px;
 }
 
 .clipImg.photoshop {
@@ -1276,7 +1318,7 @@ textarea.form-user {
 
 .img-custom-skill {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-top: 160px;
 }
@@ -1506,6 +1548,12 @@ textarea.form-user {
     }   
 }
 
+@media (max-width: 767px) {
+    .btn-filter {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 320px) {
     .btn-filter {
         padding: 5px 7px;
@@ -1514,8 +1562,116 @@ textarea.form-user {
 }
 /*END SKILLS PAGE*/
 
+/*PORTFOLIO*/
+.img-custom-portfolio {
+    position: relative;
+    margin-top: 160px;
+}
 
+.yop-portfolio {
+    position: absolute;
+    left: -50px;
+}
 
+.filter-title {
+    grid-column-end: span 4;
+    position: relative!important;
+    left: inherit!important;
+    top: inherit!important;
+}
+
+.filter-title h1{
+    margin-top: 0px;
+    width: fit-content;
+}
+
+.filters-projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.grid-container-projects {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    padding: 0 40px;
+    height: fit-content!important;
+}
+
+.grid-container-projects .card-project {
+    position: relative!important;
+    left: inherit!important;
+    top: inherit!important;
+}
+
+.card-Illustration {
+    padding: 0;
+}
+
+.card-Illustration .cont-img-card {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.card-Illustration .cont-img-card img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width:1200px) {
+    .grid-container-projects {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .yop-portfolio {
+        left: -20px;
+    }
+
+    .filter-title {
+        grid-column-end: span 3;
+    }
+
+    .grid-container-projects {
+        grid-template-columns: auto auto auto;
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .filter-title {
+        grid-column-end: span 2;
+    }
+
+    .filters-projects .btn-filter{
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .grid-container-projects {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:425px) {
+    .filter-title {
+        grid-column-end: span 1;
+    }
+
+    .grid-container-projects {
+        grid-template-columns: auto;
+    }
+}
+/*END PORTFOLIO*/
 
 
 
