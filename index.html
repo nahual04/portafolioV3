@@ -24,8 +24,8 @@
     <script src="https://kit.fontawesome.com/113a378e2b.js" crossorigin="anonymous"></script>
     <!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- roboto -->
@@ -237,76 +237,85 @@
                 </div>
             </div>
         </section>
+        
         <!-- slider -->
-        <div class="regular slider slider-project">
-            <div>
-                <!-- card 1 -->
-                <div class="card-project card-aFood" data-bs-toggle="modal" data-bs-target="#modal-akiraFood" data-aos="zoom-in">
-                    <div class="selected" >
-                        <div>
-                            <i class="fas fa-eye text-white"></i>
-                            <p>Ver proyecto</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- card 1 -->
+                    <div class="card-project card-aFood" data-bs-toggle="modal" data-bs-target="#modal-akiraFood" data-aos="zoom-in">
+                        <div class="selected">
+                            <div>
+                                <i class="fas fa-eye text-white"></i>
+                                <p>Ver proyecto</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cont-img-card">
-                        <img src="img/projects/cards/akira-food.svg" alt="Akira food" class="img-fluid">
-                    </div>
-                    <p>Akira Food</p>
-                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
-                </div>
-                <!-- end card 1 -->
-            </div>
-            <div>
-                <!-- card 2 -->
-                <div class="card-project card-mj" data-bs-toggle="modal" data-bs-target="#modal-mj" data-aos="zoom-in">
-                    <div class="selected">
-                        <div>
-                            <i class="fas fa-eye text-white"></i>
-                            <p>Ver proyecto</p>
+                        <div class="cont-img-card">
+                            <img src="img/projects/cards/akira-food.svg" alt="Akira food" class="img-fluid">
                         </div>
+                        <p>Akira Food</p>
+                        <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
                     </div>
-                    <div class="cont-img-card">
-                        <img src="img/projects/cards/mj-fest.svg" alt="Mundo Joven Fest" class="img-fluid">
-                    </div>
-                    <p>Mundo Joven Fest</p>
-                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                    <!-- end card 1 -->
                 </div>
-                <!-- end card 2 -->
-            </div>
-            <div>
-                <!-- card 3 -->
-                <div class="card-project card-nuad" data-bs-toggle="modal" data-bs-target="#modal-nuad" data-aos="zoom-in">
-                    <div class="selected">
-                        <div>
-                            <i class="fas fa-eye text-white"></i>
-                            <p>Ver proyecto</p>
+
+                <div class="swiper-slide">
+                    <!-- card 2 -->
+                    <div class="card-project card-mj" data-bs-toggle="modal" data-bs-target="#modal-mj" data-aos="zoom-in">
+                        <div class="selected">
+                            <div>
+                                <i class="fas fa-eye text-white"></i>
+                                <p>Ver proyecto</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cont-img-card">
-                        <img src="img/projects/cards/nuad.svg" alt="UX Núad" class="img-fluid">
-                    </div>
-                    <p>UX Núad</p>
-                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
-                </div>
-                <!-- card 3 -->
-            </div>
-            <div>
-                <!-- card 4 -->
-                <div class="card-project card-mezcal" data-bs-toggle="modal" data-bs-target="#modal-mezcalera" data-aos="zoom-in">
-                    <div class="selected">
-                        <div>
-                            <i class="fas fa-eye text-white"></i>
-                            <p>Ver proyecto</p>
+                        <div class="cont-img-card">
+                            <img src="img/projects/cards/mj-fest.svg" alt="Mundo Joven Fest" class="img-fluid">
                         </div>
+                        <p>Mundo Joven Fest</p>
+                        <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
                     </div>
-                    <div class="cont-img-card">
-                        <img src="img/projects/cards/mezcalera.svg" alt="Mezcalera Oaxaca" class="img-fluid">
-                    </div>
-                    <p>Mezcalera Oaxaca</p>
-                    <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                    <!-- end card 2 -->
                 </div>
-                <!-- end card 4 -->
+
+                <div class="swiper-slide">
+                    <!-- card 3 -->
+                    <div class="card-project card-nuad" data-bs-toggle="modal" data-bs-target="#modal-nuad" data-aos="zoom-in">
+                        <div class="selected">
+                            <div>
+                                <i class="fas fa-eye text-white"></i>
+                                <p>Ver proyecto</p>
+                            </div>
+                        </div>
+                        <div class="cont-img-card">
+                            <img src="img/projects/cards/nuad.svg" alt="UX Núad" class="img-fluid">
+                        </div>
+                        <p>UX Núad</p>
+                        <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                    </div>
+                    <!-- card 3 -->
+                </div>
+
+                <div class="swiper-slide">
+                    <!-- card 4 -->
+                    <div class="card-project card-mezcal" data-bs-toggle="modal" data-bs-target="#modal-mezcalera" data-aos="zoom-in">
+                        <div class="selected">
+                            <div>
+                                <i class="fas fa-eye text-white"></i>
+                                <p>Ver proyecto</p>
+                            </div>
+                        </div>
+                        <div class="cont-img-card">
+                            <img src="img/projects/cards/mezcalera.svg" alt="Mezcalera Oaxaca" class="img-fluid">
+                        </div>
+                        <p>Mezcalera Oaxaca</p>
+                        <p class="d-block d-md-none small fw-light">- Ver proyecto -</p>
+                    </div>
+                    <!-- end card 4 -->
+                </div>
+              
             </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
         <!-- end slider -->
         <!-- END PORTFOLIO -->
@@ -571,8 +580,8 @@
     <!-- END FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- AOS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -581,64 +590,34 @@
             AOS.init();
         // END INITIALIZE AOS
 
-        //SLICKY SLIDER
-        $(document).on('ready', function() {
-            $(".regular").slick({
-                dots: false,
-                infinite: false,
-                variableWidth: false,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                arrows: false,
-        
-                responsive: [
-                {
-                    breakpoint: 1440,
-                    settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    }
+        // SLIDER
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                427: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 20,
                 },
-                {
-                    breakpoint: 1025,
-                    settings: {
-                    slidesToShow: 3.2,
-                    slidesToScroll: 1,
-                    }
+                768: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 40,
                 },
-                {
-                    breakpoint: 991,
-                    settings: {
-                    slidesToShow: 3.5,
-                    slidesToScroll: 1
-                    }
+                991: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 40,
                 },
-                {
-                    breakpoint: 769,
-                    settings: {
-                    slidesToShow: 2.2,
-                    slidesToScroll: 1
-                    }
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
                 },
-                {
-                    breakpoint: 427,
-                    settings: {
-                    slidesToShow: 1.3,
-                    slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 321,
-                    settings: {
-                    slidesToShow: 1.1,
-                    slidesToScroll: 1
-                    }
-                }
-                ]
-            });
-        
+            }
         });
-        //SLICKY SLIDER
+        //END SLIDER
     </script>
 </body>
 </html>

@@ -37,61 +37,31 @@ $('.button-group').each( function( i, buttonGroup ) {
 // END FILTER
 
 
-//SLICKY SLIDER
-$(document).on('ready', function() {
-  $(".regular").slick({
-      dots: false,
-      infinite: false,
-      variableWidth: false,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows: false,
-
-      responsive: [
-      {
-          breakpoint: 1440,
-          settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          }
+// SLIDER
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  breakpoints: {
+      427: {
+          slidesPerView: 2.1,
+          spaceBetween: 20,
       },
-      {
-          breakpoint: 1025,
-          settings: {
-          slidesToShow: 3.2,
-          slidesToScroll: 1,
-          }
+      768: {
+          slidesPerView: 2.8,
+          spaceBetween: 40,
       },
-      {
-          breakpoint: 991,
-          settings: {
-          slidesToShow: 3.5,
-          slidesToScroll: 1
-          }
+      991: {
+          slidesPerView: 3.5,
+          spaceBetween: 40,
       },
-      {
-          breakpoint: 769,
-          settings: {
-          slidesToShow: 2.2,
-          slidesToScroll: 1
-          }
+      1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
       },
-      {
-          breakpoint: 427,
-          settings: {
-          slidesToShow: 1.3,
-          slidesToScroll: 1
-          }
-      },
-      {
-          breakpoint: 321,
-          settings: {
-          slidesToShow: 1.1,
-          slidesToScroll: 1
-          }
-      }
-      ]
-  });
-
+  }
 });
-//SLICKY SLIDER
+//END SLIDER
