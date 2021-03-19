@@ -630,6 +630,13 @@ section {
         width: 100%;
     }
 }
+
+@media (max-width:320px){
+    #imgBanner {
+        bottom: -15%;
+        width: 80%;
+    }
+}
 /*END BANNER*/
 
 /*PORTFOLIO*/
@@ -989,7 +996,7 @@ section {
 
 /*CONTACT*/
 
-#reused_form {
+.form-mail {
     padding: 40px 20PX;
     background: #EAEAEA;
     border-radius: 20px;
@@ -1052,7 +1059,7 @@ textarea.form-user {
     top: 26px;
 }
 
-#reused_form button {
+#FormContact button {
     padding: 0;
     max-width: 100%;
 }
@@ -1102,6 +1109,10 @@ textarea.form-user {
     width: 99%;
     padding: 0;
     padding-left: 110px;
+}
+
+.normal-footer {
+    margin-top: 80px;
 }
 
 .footer-bottom {
@@ -1571,6 +1582,7 @@ textarea.form-user {
 .yop-portfolio {
     position: absolute;
     left: -50px;
+    width: 80%;
 }
 
 .filter-title {
@@ -1624,6 +1636,27 @@ textarea.form-user {
     object-fit: cover;
 }
 
+.txt-card-illustration {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.carousel-inner.carousel-mobile .carousel-item {
+    overflow: hidden;
+}
+
+.video-modal {
+    position: relative;
+    padding: 0!important;
+    margin: 0;
+}
+
 @media (max-width:1200px) {
     .grid-container-projects {
         grid-template-columns: auto auto auto auto;
@@ -1633,6 +1666,10 @@ textarea.form-user {
 }
 
 @media (max-width:991px) {
+    .img-custom-portfolio {
+        margin-top: 110px;
+    }
+
     .yop-portfolio {
         left: -20px;
     }
@@ -1648,6 +1685,10 @@ textarea.form-user {
 }
 
 @media (max-width:768px) {
+    .img-custom-portfolio {
+        margin-top: 20px;
+    }
+
     .filter-title {
         grid-column-end: span 2;
     }

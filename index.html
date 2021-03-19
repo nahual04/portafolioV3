@@ -77,7 +77,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="contactame">
+                    <a href="contactame.html">
                         <i class="fas fa-envelope-open-text"></i>
                         <p class="text-xs">Contáctame</p>
                     </a>
@@ -144,7 +144,7 @@
                             </a>
                         </li>
                         <li class="">
-                            <a href="contactame">
+                            <a href="contactame.html">
                                 <i class="fas fa-envelope-open-text"></i>
                                 <p class="text-xs">Contáctame</p>
                             </a>
@@ -184,7 +184,7 @@
                             </h1>
                             <div class="btn-banner-cont">
                                 <a href="cv/Robelci CV-Book.pdf" class="hvr-bounce-to-right" target="_blank">Descarga mi CV</a>
-                                <a href="portafolio.html" class="hvr-bounce-to-right btn-black">Contáctame</a>
+                                <a href="contactame.html" class="hvr-bounce-to-right btn-black">Contáctame</a>
                             </div>
                         </div>
                     </div>
@@ -361,20 +361,20 @@
 
                         <div class="row">
                             <div class="col" data-aos="fade-right">
-                                <form id="reused_form">
+                                <form id="FormContact" name="frmContacto" method="post" action="correo.php" class="form-mail">
                                     <div class="cont-input">
-                                        <input type="text" name="name" id="nombre" class="form-user" required>
+                                        <input type="text" name="name" maxlength="50" class="form-user" required>
                                         <label class="name-data" for="nombre">Tu nombre</label>
                                         <span class="bar"></span>
                                     </div>
                 
                                     <div class="cont-input">
-                                        <input type="email" name="email" id="correo" class="form-user" required>
+                                        <input type="email" name="email" maxlength="50" class="form-user" required>
                                         <label class="name-data" for="correo">Tu mail</label>
                                         <span class="bar"></span>
                                     </div>
                                     <div class="cont-input">
-                                        <textarea name="message" id="mensaje" class="w-100 form-user" required></textarea>
+                                        <textarea name="message" maxlength="200" class="w-100 form-user" required></textarea>
                                         <label class="name-data name-textarea" for="mensaje">Escribe aquí lo que quieras</label>
                                         <span class="bar"></span>
                                     </div>
@@ -490,7 +490,7 @@
                             <img src="img/projects/img-tablet.svg">
                             <div class="screen-tablet">
                                 <!-- carousel modal -->
-                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselNuad" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="img/projects/webs/Nuad-ux1.jpg" class="img-fluid">
@@ -505,11 +505,11 @@
                                             <img src="img/projects/webs/Nuad-ux2.jpg" class="img-fluid">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNuad"  data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNuad"  data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -519,10 +519,9 @@
                         </div>  
                     </div>
                     <div class="modal-footer border-0 bg-light d-block p-0">
-                        <a href="https://proyectos-omega.vercel.app/MJ-fest/home.html" target="_blank" class="btn-modal">Visitar sitio</a>  
                         <div class="p-3">
-                            <p class="fs-4 fw-bold mb-3">Mundo Joven Fest</p>
-                            <p>Para este proyecto se me proporcionó el diseño, en el cual realicé la maquetación, esta One Page sirvió para la expo realizada por mundo joven la cual ofrece viajes y estudios en el extranjero.</p>
+                            <p class="fs-4 fw-bold mb-3">UX Núad</p>
+                            <p>Implementación de UX en el administrador de Núad donde se eliminaron y optimizaron flujos.  Núad está dedicada a brindar servicios de spa.</p>
                         </div>
                     </div>
                 </div>
@@ -554,15 +553,14 @@
                     <div class="modal-footer border-0 bg-light d-block p-0">
                         <a href="https://mezcaleraoaxaca.com/" target="_blank" class="btn-modal">Visitar sitio</a>  
                         <div class="p-3">
-                            <p class="fs-4 fw-bold mb-3">Mundo Joven Fest</p>
-                            <p>Para este proyecto se me proporcionó el diseño, en el cual realicé la maquetación, esta One Page sirvió para la expo realizada por mundo joven la cual ofrece viajes y estudios en el extranjero.</p>
+                            <p class="fs-4 fw-bold mb-3">Mezcalera Oaxaca</p>
+                            <p>Creación de un sitio web para proporcionar información y precios sobre mezcales.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- END MODAL MEZCALERA -->
-
     </main>
 
     <!-- FOOTER -->
