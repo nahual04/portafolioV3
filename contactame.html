@@ -175,25 +175,25 @@
                             </div>
                         </div>
                         <div class="col" data-aos="fade-right">
-                            <form id="FormContact" name="frmContacto" method="post" action="correo.php" class="form-mail">
+                            <form id="FormContact" name="frmContacto" class="form-mail">
                                 <div class="cont-input">
-                                    <input type="text" name="name" maxlength="50" class="form-user" required>
+                                    <input type="text" id="name" name="name" maxlength="50" class="form-user" required>
                                     <label class="name-data" for="nombre">Tu nombre</label>
                                     <span class="bar"></span>
                                 </div>
             
                                 <div class="cont-input">
-                                    <input type="email" name="email" maxlength="50" class="form-user" required>
+                                    <input type="email" id="email" name="email" maxlength="50" class="form-user" required>
                                     <label class="name-data" for="correo">Tu mail</label>
                                     <span class="bar"></span>
                                 </div>
                                 <div class="cont-input">
-                                    <textarea name="message" maxlength="200" class="w-100 form-user" required></textarea>
+                                    <textarea id="message" name="message" maxlength="200" class="w-100 form-user" required></textarea>
                                     <label class="name-data name-textarea" for="mensaje">Escribe aquí lo que quieras</label>
                                     <span class="bar"></span>
                                 </div>
                                 <div class="form-group">
-                                    <button class="hvr-bounce-to-right btn-black">Enviar</button>
+                                    <button class="hvr-bounce-to-right btn-black" onclick="enviarcorreo(event)">Enviar</button>
                                 </div>
                             </form>
                             <div id="error_message" style="display:none;">
@@ -245,9 +245,46 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+        var flagsendemail = false
+        var erroremail = false
+
         // INITIALIZE AOS
             AOS.init();
         // END INITIALIZE AOS
+
+        //ENVIAR CORREO        
+        function enviarcorreo(event){
+            event.preventDefault();
+
+            const data = new FormData() 
+            data.append('name', document.getElementById("name").value);
+            data.append('email', document.getElementById("email").value);
+            data.append('message', document.getElementById("message").value);
+
+            document.getElementById('FormContact').style.display='none'
+
+            fetch('correo.php', {
+                method: 'POST',
+                body: data
+            })
+
+            .then(function(response) {
+                if(response.ok) {
+                    return response.text()
+                } else {
+                    throw "Error en la llamada Ajax";
+                }
+            })
+
+            .then(function(texto) {
+                document.getElementById('success_message').style.display='block'
+            })
+
+            .catch(function(err) {
+                document.getElementById('error_message').style.display='block'
+            });
+        }
+        //END ENVIAR CORREO
     </script>
 </body>
 </html>
