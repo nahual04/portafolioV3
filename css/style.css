@@ -357,56 +357,56 @@ section {
 }
 
 #imgBanner path:nth-child(3) {
+    stroke-dasharray: 975px;
+    stroke-dashoffset: 975px;
+    animation: line-animated 1.2s ease forwards;
+}
+
+#imgBanner path:nth-child(4) {
     stroke-dasharray: 621px;
     stroke-dashoffset: 621px;
     animation: line-animated 1.2s ease forwards;
 }
 
-#imgBanner path:nth-child(4) {
+#imgBanner path:nth-child(5) {
     stroke-dasharray: 1176px;
     stroke-dashoffset: 1176px;
     animation: line-animated 4.5s ease forwards;
 }
 
-#imgBanner path:nth-child(5) {
+#imgBanner path:nth-child(6) {
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
-    animation: line-animated2 3.8s ease forwards;
-}
-
-#imgBanner path:nth-child(6) {
-    stroke-dasharray: 138px;
-    stroke-dashoffset: 138px;
-    animation: line-animated2 5.5s ease forwards;
+    animation: line-animated 3.8s ease forwards;
 }
 
 #imgBanner path:nth-child(7) {
+    stroke-dasharray: 138px;
+    stroke-dashoffset: 138px;
+    animation: line-animated 5.5s ease forwards;
+}
+
+#imgBanner path:nth-child(8) {
     stroke-dasharray: 44px;
     stroke-dashoffset: 44px;
     animation: line-animated 0.5s ease forwards;
 }
 
-#imgBanner path:nth-child(8) {
+#imgBanner path:nth-child(9) {
     stroke-dasharray: 49px;
     stroke-dashoffset: 49px;
-    animation: line-animated2 2s ease forwards;
+    animation: line-animated 2s ease forwards;
 }
 
-#imgBanner path:nth-child(9) {
+#imgBanner path:nth-child(10) {
     stroke-dasharray: 30px;
     stroke-dashoffset: 30px;
     animation: line-animated 0.5s ease forwards;
 }
 
-#imgBanner path:nth-child(10) {
+#imgBanner path:nth-child(11) {
     stroke-dasharray: 106px;
     stroke-dashoffset: 106px;
-    animation: line-animated 0.8s ease forwards;
-}
-
-#imgBanner path:nth-child(11) {
-    stroke-dasharray: 32px;
-    stroke-dashoffset: 32px;
     animation: line-animated 0.8s ease forwards;
 }
 
@@ -431,13 +431,13 @@ section {
 #imgBanner path:nth-child(15) {
     stroke-dasharray: 205px;
     stroke-dashoffset: 205px;
-    animation: line-animated2 1.1s ease forwards;
+    animation: line-animated 1.1s ease forwards;
 }
 
 #imgBanner path:nth-child(16) {
     stroke-dasharray: 48px;
     stroke-dashoffset: 48px;
-    animation: line-animated2 1.2s ease forwards;
+    animation: line-animated 1.2s ease forwards;
 }
 
 #imgBanner path:nth-child(17) {
@@ -455,7 +455,7 @@ section {
 #imgBanner path:nth-child(19) {
     stroke-dasharray: 32px;
     stroke-dashoffset: 32px;
-    animation: line-animated2 2.7s ease forwards;
+    animation: line-animated 2.7s ease forwards;
 }
 
 #imgBanner path:nth-child(20) {
@@ -473,18 +473,11 @@ section {
 #imgBanner path:nth-child(22) {
     stroke-dasharray: 38px;
     stroke-dashoffset: 38px;
-    animation: line-animated2 1.6s ease forwards;
+    animation: line-animated 1.6s ease forwards;
 }
 
 @keyframes line-animated {
     to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes line-animated2 {
-    to {
-        stroke-dasharray: inherit;
         stroke-dashoffset: 0;
     }
 }
@@ -1081,7 +1074,7 @@ textarea.form-user {
     padding: 40px 0;
 }
 
-.send-successful h2{
+.send-successful .messageForm {
     font-size: 30px;
     font-weight: bold;
     color: #F21833;
@@ -1351,6 +1344,8 @@ textarea.form-user {
     left: 0;
     bottom: -7px;
     width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .img-custom-skill .cont-balder img{
