@@ -15,6 +15,34 @@ body {
     min-height: 100%;
 }
 
+/*CAMBIAR ESTILO DEL SCROLL DEL NAVEGADOR*/
+.screen-desk::-webkit-scrollbar, .screen-mobile::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.screen-desk::-webkit-scrollbar:vertical, .screen-mobile::-webkit-scrollbar:vertical {
+    width:6px;
+}
+
+.screen-desk::-webkit-scrollbar-button:increment,.screen-desk::-webkit-scrollbar-button, .screen-mobile::-webkit-scrollbar-button:increment,.screen-mobile::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.screen-desk::-webkit-scrollbar:horizontal, .screen-mobile::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.screen-desk::-webkit-scrollbar-thumb, .screen-mobile::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.screen-desk::-webkit-scrollbar-track, .screen-mobile::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+/*END CAMBIAR ESTILO DEL SCROLL DEL NAVEGADOR*/
+
 .body-pb {
     padding-bottom: 100px;
 }
@@ -696,6 +724,18 @@ section {
 
 .card-project p{
     font-weight: 500;
+}
+
+.card-AppMTY {
+    background: #8F3BD3;
+}
+
+.card-cotizador {
+    background: #EE9D3E;
+}
+
+.card-plataforma-canjes {
+    background: #3B9CD3;
 }
 
 .card-mj {
